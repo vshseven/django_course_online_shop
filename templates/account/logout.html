@@ -4,17 +4,17 @@
 
 
 {% block page_title %}
-    Log In
+    Log Out
 {% endblock page_title %}
     
 
 {% block content %}
     
-<h1>Sign Up</h1>
+<h1>Log Out</h1>
+<h2>Are you sure you wanna log out?</h2>
 <form action="" method="post">
     {% csrf_token %}
-    {{form|crispy}}
-    <input type="submit" value="Log In">
+    <input type="submit" value="Are you sure?">
 </form>
 {% endblock content %}
     
